@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: "Gotham";
+    src: url("../../src/GOTHAMBOOK.TTF");
+}
+body{
+    margin: 0;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    font-family: "Gotham";
+    height: 48px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-weight: bold;
+}
+div{
+    height: 23px;
+}
+div:hover{
+    background-color: #03a7eb;
+}

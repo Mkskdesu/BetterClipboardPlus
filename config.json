@@ -1,0 +1,5 @@
+{
+    "autoUpdate": false,
+    "updateUrl" : "https://raw.githubusercontent.com/Mkskdesu/ClipboardPlus/updater/update.json",
+    "version" : "1.0.0"
+}

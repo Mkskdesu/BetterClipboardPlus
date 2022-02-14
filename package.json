@@ -1,0 +1,53 @@
+{
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "is-url": "^1.2.4",
+    "xml2js": "^0.4.23",
+    "win32-displayconfig": "^0.1.0",
+    "electron-acrylic-window": "^0.5.5",
+    "file-uri-to-path": "^1.0.0",
+    "version-range": "^1.4.0",
+    "asar": "^3.1.0",
+    "version-compare": "^1.2.0",
+    "is-svg": "^2.0.0",
+    "byte-size": "^5.0.0"
+  },
+
+  "name": "clipboard-plus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "electron": "^16.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "build": {
+    "appId": "com.electron.clipboard-plus",
+    "asar": false,
+    "files":[
+
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "icon": "appicon.png",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "icon": "appicon.png",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

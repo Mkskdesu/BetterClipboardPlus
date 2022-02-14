@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipboard Plus</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <img src="../src/img/menu.svg" class="button" onclick="showMenu();">
+        <div style="width: 40%; height: 4px;background-color: whitesmoke; margin-left: 50%;transform: translate(-50%,14px);"></div>
+        <img src="../src/img/x.svg" class="button" onclick="hideWindow()">
+    </header>
+
+    
+
+    <div id="clipboard" class="viewpanel">
+    </div>
+
+    <div id="menu" class="overlay-page">
+        <div>
+            <img src="../src/img/arrow-left.svg" alt="" class="overlay-backbtn" onclick="hideOverlay(this)">
+            Clipboard Plus
+        </div>
+        
+        <p onclick="newBlankClip()">New Blank Clip</p>
+        <p onclick="exportJson()">Export JSON</p>
+        <p onclick="importJson(true)">Import JSON to Replace</p>
+        <p onclick="importJson(false)">Import JSON to Append </p>
+        <div> <label for="toggle-autolaunch">Autolaunch</label>
+            <span class="toggle-switch">
+                <input id="toggle-autolaunch" class="toggle-input" type='checkbox' />
+                <label for="toggle-autolaunch" class="toggle-label" />
+            </span>
+        </div>
+    </div>
+
+    <div id="editor">
+        <div id="editor-header">
+            <img src="../src/img/menu.svg" alt="" class="button" onclick="openEditorContext();">
+            <blank></blank>
+            <img src="../src/img/check-lg.svg" alt="" class="button" onclick="saveEditor();">
+            <img src="../src/img/x.svg" alt="" class="button" onclick="closeEditor();">
+        </div>
+        <div id="editor-input" contenteditable>
+
+        </div>
+        <div id="editor-footer">
+            <span id="editor-footer-type">
+
+            </span>
+            <span id="editor-footer-size">
+
+            </span>
+        </div>
+        <div id="editor-context" class="contextmenu">
+            <p onclick="saveAsNewClipFromEditor();">Save as new clip</p>
+            <p onclick="clearEditor();">Clear editor</p>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
