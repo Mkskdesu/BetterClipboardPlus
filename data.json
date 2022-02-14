@@ -2,7 +2,7 @@
     "contents": [
         {
             "type": "string",
-            "content": "Hello, Clipboard!"
+            "data": "Hello, Clipboard!"
         }
     ]
 }
